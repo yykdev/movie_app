@@ -43,3 +43,15 @@ v10.16.0
 #### start react
 
 > npx create-react-app [ project name ]
+
+---
+
+## props types
+
+#### -install
+
+> npm i prop-types
+
+```
+전달 한 props 가 제대로 전달 되었는지 확인 해주는 모듈
+```
