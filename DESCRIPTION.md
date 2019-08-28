@@ -35,3 +35,11 @@ v10.16.0
 #### - install
 
 > npm install npx -g
+
+---
+
+## # react
+
+#### start react
+
+> npx create-react-app [ project name ]
