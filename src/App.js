@@ -1,15 +1,18 @@
 import React from "react";
 
-function Food(props) {
-    console.log(props.fav);
-    return <h1>I Love Potato</h1>;
+function Food({ favourite }) {
+    console.log(favourite);
+    return <h1>I Love {favourite}</h1>;
 }
 
 function App() {
     return (
         <div className="App">
             <h1>Hello</h1>
-            <Food fav="kimchi" />
+            <Food favourite="kimchi" />
+            <Food favourite="ramen" />
+            <Food favourite="samgipsal" />
+            <Food favourite="chukumii" />
         </div>
     );
 }
