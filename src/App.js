@@ -2,8 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 class App extends React.Component {
+    state = {
+        count: 0
+    };
     render() {
-        return <h1>I'm a class Component</h1>;
+        return <h1>Now count : {this.state.count}</h1>;
     }
 }
 
