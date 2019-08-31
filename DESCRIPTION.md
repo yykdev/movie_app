@@ -1,57 +1,45 @@
 # NomadCoders [ReactJS로 웹서비스 만들기](https://academy.nomadcoders.co/p/reactjs-fundamentals)
 
-## # nodejs
+## # react LifeCycle
 
-#### - node version 체크
-
-> node -v
+> 1. constructor
 
 ```
-➜  reactjs-fundamentals git:(master) node -v
-v10.16.0
+constructor(props) {
+    // 컴포넌트가 생성 될 때 실행 됨
+    super(props);
+    console.log("hello");
+}
 ```
 
-#### - install
-
-> https://nodejs.org/ko/ 다운로드
-
----
-
-## # npm
-
-#### - npm version 체크
-
-> npm -v
+> 2. componentDidMount
 
 ```
-➜  reactjs-fundamentals git:(master) npm -v
-6.9.0
+componentDidMount() {
+    // 처음 렌더링 된 후에만 호출 됨
+    console.log("component rendered");
+}
 ```
 
----
-
-## # npx
-
-#### - install
-
-> npm install npx -g
-
----
-
-## # react
-
-#### start react
-
-> npx create-react-app [ project name ]
-
----
-
-## props types
-
-#### -install
-
-> npm i prop-types
+> 3. render
 
 ```
-전달 한 props 가 제대로 전달 되었는지 확인 해주는 모듈
+render() {
+    // 렌더링 될 때마다 실행 됨
+    console.log("I'm rendering");
+    return (
+        <div>
+
+        </div>
+    );
+}
+```
+
+> 4. componentDidUpdate
+
+```
+componentDidUpdate() {
+    // 변경 사항이 발생하여 render 호출 된 이후 호출 됨
+    console.log("I just Update");
+}
 ```
