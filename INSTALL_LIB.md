@@ -48,10 +48,22 @@ v10.16.0
 
 ## props types
 
-#### -install
+#### - install
 
 > npm i prop-types
 
 ```
 전달 한 props 가 제대로 전달 되었는지 확인 해주는 모듈
+```
+
+---
+
+## axios
+
+#### - install
+
+> npm install axios
+
+```
+HTTP 클라이언트 라이브러리로써, 비동기 방식으로 HTTP 데이터 요청을 실행
 ```
