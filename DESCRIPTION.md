@@ -43,3 +43,20 @@ componentDidUpdate() {
     console.log("I just Update");
 }
 ```
+
+## # github.io deploy
+
+> 1. npm i gh-pages
+
+> 2. package.json의 deploy, predeploy 스크립트 및 homepage 설정 추가
+
+```
+scrpit 내의 키는 pre를 붙여줄 경우 먼저 실행 후 실제 입력한 명령어의 스크립트를 실행 한다.
+
+npm run deploy
+=> predeploy 실행 후 deploy 실행
+```
+
+> 3. npm run build 명령을 통한 프로젝트 소스 배포용으로 빌드
+
+> 4. npm run deploy 로 소스 업로드
